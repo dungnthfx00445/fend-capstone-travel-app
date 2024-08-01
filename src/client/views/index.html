@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <title>Travel App</title>
+    <header>
+      <nav>
+        <a href="#">About</a> | <a href="#">Search</a> |
+        <a href="#">Subscribe</a>
+      </nav>
+    </header>
+    <section class="container">
+      <section class="listBlog">
+        <form id="urlForm">
+          <div id="search">
+            <div>
+              <label>Location</label>
+              <input
+                id="location"
+                type="text"
+                placeholder="Enter location"
+                required
+              />
+            </div>
+            <div>
+              <label>Choose date</label>
+              <input id="date" type="date" placeholder="Choose date" required />
+            </div>
+          </div>
+          <button id="submitButton" type="submit">Submit</button>
+        </form>
+        <section id="listLocation"></section>
+      </section>
+      <section class="sidebar">
+        <h1>New Post</h1>
+        <a href="#">Post blog 1</a>
+        <a href="#">Post blog 2</a>
+        <a href="#">Post blog 3</a>
+        <a href="#">Post blog 4</a>
+      </section>
+    </section>
+    <footer>
+      <p>
+        Author: DungNguyen |
+        <a href="#">dungnguyen@example.com</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+@import './responsive.scss';
+@import './layout.scss';
+@import './color.scss';
+
+.blog1 { grid-area: blog1; }
+.blog2 { grid-area: blog2; }
+.blog3 { grid-area: blog3; }
+.blog4 { grid-area: blog4; }
+.sidebar { 
+    grid-area: sidebar;
+    background-color: var(--color-background-sidebar);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.sidebar a {
+    color: var(--color-blue);
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.container {
+    display: flex;
+     width: 100%;
+    justify-content: space-around;
+}
+
+.listBlog {
+    width: 75%
+}
+
+.container article {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 16px;
+    width: 40%;
+    float: right;
+    margin: 16px 4% 16px 0px;
+}
+
+.container article header {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-background-button);
+}
+
+button a {
+    text-decoration: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--color-header-h2);
+    font-family: 'DM Sans';
+}

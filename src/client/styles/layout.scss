@@ -1,0 +1,25 @@
+@import './color.scss';
+
+body {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background-footer);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+}
