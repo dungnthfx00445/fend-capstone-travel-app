@@ -92,8 +92,10 @@ app.post("/api/images", async function (req, res) {
   }
 });
 
-app.listen(process.env.PORT, function () {
-  console.log(`Example app listening on port ${process.env.PORT}!`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function () {
+  console.log(`Example app listening on port ${PORT}!`);
 });
 
 module.exports = app;
